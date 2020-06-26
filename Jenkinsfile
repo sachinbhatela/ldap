@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    label 'docker&&linux'
-  }
+   agent { label 'jenkins-jenkins-slave' }
 
   options {
     buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
